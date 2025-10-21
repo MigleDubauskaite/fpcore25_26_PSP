@@ -12,7 +12,7 @@ public class CuentaAtrasRunnable implements Runnable {
 
 	@Override
 	public void run() {
-		for (int i = 10; i >= 0; i--) {
+		for (int i = inicio; i >= 0; i--) {
 			System.out.printf("%s::%d %n ", nombre, i);
 			try {
 				Thread.sleep(100);
