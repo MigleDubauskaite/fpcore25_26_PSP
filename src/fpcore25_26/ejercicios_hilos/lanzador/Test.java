@@ -33,11 +33,14 @@ public class Test {
 		System.out.println(b1);
 		System.out.println(b2);
 		System.out.println(b3);
-		
+
 		System.out.println("\n\nOtra manera: ");
-		new LanzadorVaciadorBotella(new Botella("A", 5, '$')).start();;
-		new LanzadorVaciadorBotella(new Botella("B", 4, '*')).start();;
-		new LanzadorVaciadorBotella(new Botella("C", 3, '-')).start();;
+		new LanzadorVaciadorBotella(new Botella("A", 5, '$')).start();
+		;
+		new LanzadorVaciadorBotella(new Botella("B", 4, '*')).start();
+		;
+		new LanzadorVaciadorBotella(new Botella("C", 3, '-')).start();
+		;
 
 	}
 
