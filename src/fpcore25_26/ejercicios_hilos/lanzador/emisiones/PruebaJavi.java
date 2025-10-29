@@ -32,6 +32,8 @@ public class PruebaJavi {
 		System.out.println(l2);
 		
 		
+		// mirar esta parte para que me de estados 4 y 5
+		
 		// 4º ESTADO: TIMED_WAITING
 		// si lo ponemos a sleep
 		System.out.println("\n\n\n\nOTRA PRUEBA");
@@ -39,8 +41,14 @@ public class PruebaJavi {
 		LanzadorEmisionesJavi otra = new LanzadorEmisionesJavi("LANZADOR 1", new EmisorJavi("EMISOR 1", '*', 3));
 		
 		for (int i = 0; i < 25; i++) {
-			
+			System.out.println(otra);
 		}
+		try {
+			Thread.sleep(6000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
 		System.out.println(otra);
 		
 		// 5º ESTADO: BLOCKED
