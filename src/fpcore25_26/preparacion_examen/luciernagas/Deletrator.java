@@ -19,6 +19,7 @@ public class Deletrator {
 
 			for (int j = 0; j < letras.length; j++) {
 
+				// Muestra solo la letra que está exactamente en la posición i.
 				if (j == i)
 					sb.append(palabra.charAt(j));
 				else
