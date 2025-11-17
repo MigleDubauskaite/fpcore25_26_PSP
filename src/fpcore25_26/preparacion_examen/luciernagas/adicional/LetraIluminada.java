@@ -25,14 +25,16 @@ public class LetraIluminada {
 				} else {
 					sb.append(Character.toLowerCase(letras[j]));
 				}
+				try {
+					Thread.sleep(milis);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
 			}
+			
+			
 			System.out.println(sb);
 
-			try {
-				Thread.sleep(milis);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
 		}
 
 	}
