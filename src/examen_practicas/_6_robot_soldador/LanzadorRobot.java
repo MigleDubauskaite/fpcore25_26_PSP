@@ -1,6 +1,6 @@
 package examen_practicas._6_robot_soldador;
 
-public class LanzadorRobot implements Runnable {
+public class LanzadorRobot extends Thread {
 
 	private RobotSoldador robot;
 
@@ -16,10 +16,7 @@ public class LanzadorRobot implements Runnable {
 	public static void main(String[] args) {
 
 		LanzadorRobot l = new LanzadorRobot(new RobotSoldador("ROBOT", 5));
-
-		Thread t = new Thread(l);
-
-		t.start();
+		l.start();
 		
 		
 		Thread t2 = new Thread(new LanzadorRobot(new RobotSoldador("R", 3)));

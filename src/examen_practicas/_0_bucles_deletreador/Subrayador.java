@@ -12,8 +12,6 @@ public class Subrayador {
 
 	public void subrayar() {
 
-		int longitudPalabra = palabra.length();
-
 		for (int i = 0; i < palabra.length(); i++) {
 			
 		    StringBuilder sb = new StringBuilder();
